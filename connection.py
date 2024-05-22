@@ -14,9 +14,9 @@ def Data_updation(Details):
         #Estabilishing Connection
         mydb = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="1234",
-        database="proj"
+        user="Sql_user_name",
+        password="Sql_password",
+        database="Database_Name"
         )
         
         #Getting the datas from the Database

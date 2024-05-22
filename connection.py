@@ -1,3 +1,6 @@
+#Modify the code according to your system variable names
+
+
 import mysql.connector
 import datetime
 
@@ -16,11 +19,11 @@ def Data_updation(Details):
         host="localhost",
         user="Sql_user_name",
         password="Sql_password",
-        database="Database_Name"
+        database="proj"#Database name
         )
         
         #Getting the datas from the Database
-
+        #details = Table_Name
         query1="select * from details where name=%s and rollNo=%s;"
 
         cursor= mydb.cursor()

@@ -43,7 +43,7 @@ def Data_updation(Details):
                     total_days= data[2]+1
                     new_date=date
 
-                    query2="update details set Days_present=%s,date=%s where name=%s and rollNo=%s;"
+                    query2="update details set Days_present=%s,lastDatePresent=%s where name=%s and rollNo=%s;"
                     
                     cursor.execute(query2,(total_days,new_date,name,rollno))
 
